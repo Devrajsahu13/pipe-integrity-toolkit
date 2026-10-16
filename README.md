@@ -58,24 +58,36 @@ wall thickness (radius exaggerated 20× so the pipe is visible).
 - Severity bands (Low to Severe) are examples. Real limits come from the client's integrity criteria and industry standards.
 - Each scan is analyzed on its own. Comparing repeat inspections would show how fast corrosion is growing.
 
+## Project structure
+
+```
+pipe-integrity-toolkit/
+├── notebooks/
+│   └── pipe_integrity_analysis.ipynb   step-by-step walkthrough, outputs saved
+├── scripts/
+│   ├── simulate.py    builds the casing scan: noise, collars, missing data, planted defects
+│   ├── detect.py      the analysis workflow and QA check
+│   └── main.py        runs everything and saves the outputs
+├── outputs/           images, defects.csv and the interactive 3D view
+├── requirements.txt
+└── README.md
+```
 
 ## Run it
 
-**Step-by-step walkthrough (recommended):** open `pipe_integrity_analysis.ipynb` in Jupyter.
-It runs each stage separately and shows what it does, with explanations and plots.
-
-**Everything at once:**
-
 ```bash
 pip install -r requirements.txt
-python main.py
 ```
 
-## Files
+**Step-by-step walkthrough (recommended):** open `notebooks/pipe_integrity_analysis.ipynb`
+in Jupyter. It runs each stage separately and shows what it does, with explanations and plots.
 
-- `pipe_integrity_analysis.ipynb` – the walkthrough notebook, with outputs saved
-- `simulate.py` – builds the casing scan: noise, collars, missing data and planted defects
-- `detect.py` – the analysis workflow and QA check
-- `main.py` – runs everything and saves the images, `defects.csv` and the 3D view
+**Everything at once:** from the project folder, run
 
-Tools: Python, NumPy, SciPy, pandas, Matplotlib, Plotly.
+```bash
+python scripts/main.py
+```
+
+The images, `defects.csv` and the 3D view are saved to `outputs/`.
+
+Tools: Python, NumPy, SciPy, pandas, Matplotlib, Plotly, Jupyter.
