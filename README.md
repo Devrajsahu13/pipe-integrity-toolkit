@@ -51,6 +51,14 @@ wall thickness (radius exaggerated 20× so the pipe is visible).
 - **Context prevents false calls.** Collars, missing data and a groove crossing a
   collar all needed rules based on how a real well is built.
 
+## Limitations
+
+- The scan is simulated. Real data would add effects this model leaves out, such as tool eccentering, scale and gas in the well fluid.
+- Defect types are classified with simple shape rules. A real workflow would also use the raw ultrasound signal and analyst review.
+- Severity bands (Low to Severe) are examples. Real limits come from the client's integrity criteria and industry standards.
+- Each scan is analyzed on its own. Comparing repeat inspections would show how fast corrosion is growing.
+
+
 ## Run it
 
 **Step-by-step walkthrough (recommended):** open `pipe_integrity_analysis.ipynb` in Jupyter.
