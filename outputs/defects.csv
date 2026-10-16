@@ -1,0 +1,7 @@
+Defect #,Depth top (m),Depth of deepest point (m),Angle (deg),Clock position,Length (mm),Width (mm),Min wall (mm),Wall loss (%),Type,Severity
+1,1251.09,1251.2,45,2 o'clock,240,20,3.42,62.8,Pitting,Severe
+2,1209.33,1209.4,95,3 o'clock,160,17,5.35,41.8,Pitting,High
+3,1223.14,1224.03,203,7 o'clock,1710,78,6.65,27.7,General corrosion,Moderate
+4,1209.86,1209.9,110,4 o'clock,90,12,6.73,26.7,Pitting,Moderate
+5,1236.0,1237.87,299,10 o'clock,5950,11,7.15,22.2,Wear groove (axial),Moderate
+6,1242.3,1242.68,300,10 o'clock,1700,8,7.23,21.4,Wear groove (axial),Moderate
